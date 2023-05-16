@@ -225,9 +225,7 @@ console.log(pm.environment.get("salary"));
  Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
 ```
 var salary = pm.environment.get("salary");
-for (var i = 0; i < salary.length; i++) {
-  console.log("Salary " + i + " = " + salary[i]);
-}
+salary.forEach(salary => console.log(salary)); 
 ```
 
 ### http://162.55.220.72:5005/user_info_2
