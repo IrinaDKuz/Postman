@@ -144,7 +144,7 @@ pm.test("Check that age is 4", function () {
 
 ### http://162.55.220.72:5005/object_info_4
 
-// Статус код 200
+ Статус код 200
 ```
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -155,6 +155,7 @@ pm.test("Status code is 200", function () {
 var responseJson = pm.response.json();
 ```
  Спарсить request.
+```
 var request = pm.request.url.query.toObject ();
 ```
  Проверить, что name в ответе равно name s request (name забрать из request.)
